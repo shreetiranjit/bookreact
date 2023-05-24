@@ -1,6 +1,9 @@
 'use client'; 
 import { useState } from "react";
 
+
+
+
 export default function Home() { 
     const [clicks, setCount] = useState({left: 0, right: 0}); 
     const [allclicks, setAll] = useState([]);  

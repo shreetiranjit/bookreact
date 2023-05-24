@@ -14,6 +14,11 @@ const Statistics = (props) => {
     )
 }
 
+const Button = (props) => {
+    const {handleClick, text} = props; 
+    <button onClick={goodclick}>{text}</button>
+} 
+
 export default function Home() {
   
     const [good, setgood] = useState(0);
@@ -38,9 +43,9 @@ export default function Home() {
     <div>
       <h2> give feedback </h2>
       <h2> Statistics </h2>
-        <button onClick={goodclick}>Good</button>
-        <button onClick={badclick}>Bad</button>
-        <button onClick={neutralclick}>Neutral</button>
+        <button handleClick={goodclick}>Good</button>
+        <button handleClick={badclick}>Bad</button>
+        <button handleClick={neutralclick}>Neutral</button>
         <Statistics good={good} bad={bad} neutral={neutral} all={all} avg={avg} />
 
     </div>
