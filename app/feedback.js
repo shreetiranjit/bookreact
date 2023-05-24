@@ -43,9 +43,10 @@ export default function Home() {
     <div>
       <h2> give feedback </h2>
       <h2> Statistics </h2>
-        <button handleClick={goodclick}>Good</button>
-        <button handleClick={badclick}>Bad</button>
-        <button handleClick={neutralclick}>Neutral</button>
+        <button handleClick={goodclick}> text= 'Good'
+        </button>
+        <button handleClick={badclick}>text= 'Bad'</button>
+        <button handleClick={neutralclick}>text= 'Neutral'</button>
         <Statistics good={good} bad={bad} neutral={neutral} all={all} avg={avg} />
 
     </div>
